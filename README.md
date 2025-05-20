@@ -1,4 +1,4 @@
 # MMGLT
-This repository is established for the MMGLT: A Multimodal Cross-View Geolocation Method paper.
+This repository is established for the Attention-Based Multi-Modal Fusion Network for UAV Geo-Location.
 ***
 Coming Soon
