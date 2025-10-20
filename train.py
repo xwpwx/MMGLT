@@ -87,7 +87,7 @@ def get_parse():
     parser.add_argument('--share', default=False, type=int, help='the times of padding for the image size')
     parser.add_argument('--steps', default=[6, 8, 12, 18], type=list,
                         help='the step of lr_scheduler')
-    parser.add_argument('--old_model_pretrain', default='/home/xwp/work/three_sspt/checkpoints/1.3_rxh_doub_0/net_060.pth', help='all model will be loaded if you use this way')
+    parser.add_argument('--old_model_pretrain', default='./net_060.pth', help='all model will be loaded if you use this way')
     parser.add_argument('--pos_num', default=300, type=int, help='the times of padding for the image size')
     parser.add_argument('--loc_loss', default="smooth_l1_loss", type=str, help='MSE BCE smooth_l1_loss')
     parser.add_argument('--loc_weight', default=1.0, type=float, help='BCE smooth_l1_loss')
@@ -383,3 +383,4 @@ if __name__ == '__main__':
     train_model(model, opt, dataloaders, dataset_sizes)
 
     beepy.beep(sound=5)
+
